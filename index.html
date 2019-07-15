@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Satellite Applications Catapult - Public Data</title>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Public EO Data">
+  <meta name="keywords" content="EO, Data Cube, Landsat, Sentinel">
+  <meta name="author" content="Luigi Di Fraia">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="hosted/css/normalize.css">
+  <link rel="stylesheet" href="hosted/css/skeleton.css">
+  <link rel="stylesheet" href="hosted/css/sac.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="hosted/images/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="hosted/images/favicon-128x128.png" sizes="128x128" />
+  <link rel="icon" type="image/png" href="hosted/images/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="hosted/images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="hosted/images/favicon-16x16.png" sizes="16x16" />
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns u-max-full-width">
+        <a href="https://sa.catapult.org.uk/">
+        <img src="hosted/images/sac_logo.png" alt="Satellite Applications Catapult Logo" height="100" />
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 3em">
+        <h1>Satellite Applications Catapult - Public Data</h1>
+        <p>This repository holds the Public Data Set of the <a href="https://sa.catapult.org.uk/">Satellite Applications Catapult</a>. However, access is restricted by means of a white-listing policy. <br/>
+           To access these files with an AWS S3 client the name of the AWS bucket to use is <b>public-eo-data</b>, and the region to use is <b>eu-west-2</b>.
+        </p>
+      </div>
+    </div>
+
+    <!-- S3 Bucket Listing
+     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="row">
+      <div class="twelve columns">
+        <div id="navigation"></div>
+        <div id="listing"></div>
+      </div>
+    </div>
+    <hr/>
+
+    <!-- Footer
+     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="row">
+      <div class="twelve columns">
+        <h4>Disclaimer</h4>
+        <p>We reserve the right to make this bucket requester-pays. To ensure continuity of service please enable requester-pays flags in your client.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns">
+        <h4>Copyright</h4>
+        <p>All material on this website is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>, with the exception of:</p>
+        <ul>
+          <li>this entity's logo</li>
+          <li>content supplied by third parties</li>
+        </ul>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />
+        <p>&copy; Satellite Applications Catapult 2019</p>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+<script type="text/javascript">
+  var S3BL_IGNORE_PATH = true;
+  var BUCKET_NAME = 'public-eo-data';
+  var BUCKET_URL = 'https://public-eo-data.s3.eu-west-2.amazonaws.com';
+  // var S3B_ROOT_DIR = 'SUBDIR_L1/SUBDIR_L2/';
+  var S3B_SORT = 'A2Z';
+  var EXCLUDE_FILE = ['index.html', 'hosted/'];
+  var AUTO_TITLE = true;
+  // var S3_REGION = 's3'; // for us-east-1
+</script>
+<script type="text/javascript" src="hosted/js/s3-bucket-listing.js"></script>
+</html>

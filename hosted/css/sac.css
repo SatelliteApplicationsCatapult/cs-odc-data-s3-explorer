@@ -1,0 +1,61 @@
+/* headings */
+h1 {
+    color: #2f2f2f;
+    font-size: 48px;
+}
+h2 {
+    color: #5E67A1;
+    font-size: 32px;
+}
+h3 {
+    color: #2F2F2F;
+    font-size: 18px;
+}
+h4 {
+    color: #5E6A71;
+    font-size: 18px;
+}
+h5 {
+    color: #00A1DE;
+    font-size: 15px;
+}
+h6 {
+    color: #2F2F2F;
+    font-size: 11px;
+}
+
+/* tables */
+th:first-child, td:first-child {
+    padding-left: 24px;
+}
+
+th {
+    color: #FFFFFF; 
+    background-color: #00A1DE;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 13px;
+    padding-left: 0px;
+}
+
+td a {
+    color: #00A1DE; 
+}
+
+table tbody {
+    color: #2F2F2F; 
+    border-collapse: separate;
+    border-spacing: 1em 0;
+    font-family: Raleway;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+#listing tbody td {
+    padding: 0px 0px;
+    border-bottom: none;
+}
+
+#listing tbody td:first-child {
+    padding-left: 24px;
+}
