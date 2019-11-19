@@ -8,7 +8,7 @@ If you want to contribute to this project and make it better, your help is very 
 * Create a personal fork of the project on GitHub.
 * Clone the fork on your local machine. Your remote repo on GitHub is called `origin`.
 * Add the original repository as a remote called `upstream`.
-  * Run `git remote add upstream https://github.com/SatelliteApplicationsCatapult/public-eo-data-s3-explorer.git`.
+  * Run `git remote add upstream https://github.com/SatelliteApplicationsCatapult/cs-odc-data-s3-explorer.git`.
 * If you created your fork a while ago be sure to pull `upstream` changes into your local repository.
   * To pull from `master`, run `git pull upstream master`.
 * Create a new topic branch to work on. Branch from `develop` if it exists, else from `master`.
